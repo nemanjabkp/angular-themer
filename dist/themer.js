@@ -89,7 +89,7 @@ angular.module('angular-themer', [])
 			scope: false,
 			controller: ['$scope', 'themer', function ($scope, themer) {
 				$scope.theme = {
-					styles: themer.styles,
+					styles: themer.getStyles(),
 					selected: themer.getSelected().key
 				};
 
